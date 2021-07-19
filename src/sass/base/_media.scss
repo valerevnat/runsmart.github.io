@@ -1,0 +1,196 @@
+@media (max-width: 575px) {
+    .container  {
+        max-width: 90%;
+    }
+    .header {
+        flex-wrap: wrap;
+        &__logo {
+            width: 45vw;
+        }
+        &__official {
+             display: none;        
+        }
+        &__phone {
+            width: 40vw;
+            font-size: 4.4vw;
+        }
+        &__mobile {
+            display: block;
+            font-size: 3.3vw;
+            font-weight: 500;
+            color: #ffffff;
+            text-align: center;
+            span {
+                display: block;
+                font-size: 3.9vw;        
+            }
+        }
+    }
+    .button {
+        width: 40vw;
+        height: 30px;
+        font-size: 1.9vh;
+        &_main {
+            width: 50vw;
+            height: 40px; 
+            font-size: 1.9vh;
+        }
+        &_submit {
+            width: 208px;
+            height: 50px;
+            font-size: 14px;
+        } 
+    }
+    .promo {
+        min-height: 100vh;
+        padding-bottom: 50px;
+        background-position: 3%;
+        &__header {
+            font-size: 7.2vw;
+        }
+        &__subheader {
+            font-size: 4.2vw;
+            margin-top: 0;
+        }
+        &__icons {
+            width: 100%;
+        }
+        &__link {
+            margin-top: 1.9vh;
+        }
+    }
+    .advantages {
+        min-height: 30vh;
+        padding: 6.3vh 0 6.3vh 0;
+        &__item {
+            &_descr {
+                display: none;
+            }
+            h3 {
+                font-size: 5vw;
+                margin-top: 4vh; 
+            }
+        }
+    }
+    .title {
+        font-size: 25px;
+    }
+
+    .feed-form {
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .carousel {
+        padding: 50px 0;
+        &__inner {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        .slick-dots {
+            
+            display: flex;
+            justify-content: center;
+            width: calc(100% - 15px);
+            
+            li {
+                display: inline-block;
+                
+                button {
+                    display: block;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin-right: 15px;
+                    border: none;
+                    background-color: #000;
+                    width: 5px;
+                    height: 11px;
+                    font-size: 5px;
+                }
+            }
+            .slick-active {
+                button {
+                    background-color: gray; 
+                    color: gray;
+                    
+                }
+            }
+
+        }
+    }
+    .catalog {
+        &__content {
+            &_active {
+                display: flex;
+                justify-content: center;
+
+            }
+        }
+        &__tab {
+            font-size: 12px;
+        }
+        &-item {
+            &__wrapper {
+                width: 100%;
+            }
+            &__content {
+                width: 100%;
+                &_active {
+                    margin-right: 0;
+                }
+            }
+            &__list {
+                position: absolute;
+                display: none;
+                margin: 0;
+                padding-right: 0;
+                width: 60%;
+                height: 15%;
+                li {
+                    font-size: 12px;
+                    
+                }
+
+                &_active {
+                    display: block;
+                    transform: translateX(0%);
+                }
+            }
+            &__back {
+                position: relative;
+                bottom: calc(-100% + 20px);
+                left: calc(50%);
+                width: 100%;
+                text-align: center;
+            }
+            &__new-price {
+                font-size: 15px;
+            }
+            &__old-price {
+                font-size: 12px;
+            }
+        }
+
+            
+    }
+    .feedback {
+        padding-bottom: 30px;
+        &-items {
+            &__item {
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center; 
+                margin: 50px 0;
+            }
+            &__descr {
+                font-size: 14px;
+                margin-top: 25px;
+            }    
+        }
+    }
+
+}    
+
+    

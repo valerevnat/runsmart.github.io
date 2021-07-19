@@ -1,0 +1,28 @@
+.feedback {
+    padding-bottom: 71px;
+    &-items {
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; 
+            margin: 70px 0;
+        }
+        &__descr {
+            margin-left: 60px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #0d0d0d;
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                color: #0d0d0d;
+            }
+            h4 {
+                font-size: 14px;
+                font-weight: 300;
+                color: #646464;
+                margin-bottom: 19px;
+            }
+        }    
+    }
+}
