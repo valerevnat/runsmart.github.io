@@ -123,7 +123,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $('form').submit(function(e){
+    $('form').submit(function(){
         e.preventDefault(); //страинца при отправке формы не перезагружается
         $.ajax ({           //отправка данных на сервер 
             type: "POST",    //отдача данных на сервер
