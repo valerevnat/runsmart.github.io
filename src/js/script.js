@@ -123,4 +123,20 @@ $(document).ready(function(){
         return false;
     });
 
+    $('form').submit(function(){
+        e.preventDefault(); //страинца при отправке формы не перезагружается
+        $.ajax ({           //отправка данных на сервер 
+            type: "POST",    //отдача данных на сервер
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function(){
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
+
 });
